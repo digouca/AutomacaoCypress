@@ -14,7 +14,7 @@ class CadastroPage{
       cy.get('#city > .select__control > .select__value-container').click()
       cy.get('#react-select-6-option-0').click()
       cy.get('.StyledButton__Button-sc-bv92mm-0').click()
-      cy.get('#customLink').type('arquitetura3516')
+      cy.get('#customLink').type('arquitetura3599')
       cy.contains('.flex-col > .block' , 'Foto')
       cy.get('#inputFile[type="file"]').attachFile('brasil.png')
       .wait(2000)
@@ -58,14 +58,8 @@ class CadastroPage{
       cy.xpath('/html/body/div/div[1]/div[2]/section/div[2]/div/div/form/section/section[5]/div[1]/div/div[2]/div[1]/div/div/div[2]/div/div[1]').type('Lucas Rodrigo{enter}')
       cy.get('#projectFunction-0').type('Analista de projeto',{force: true})
       .wait(2000)
-      cy.get(':nth-child(3) > .col-span-1 > .flex > :nth-child(1) > #tags > .css-s92srz-control').click({force: true}).type('LCS Engenharia{enter}')
-      cy.get('#avatar-select-17 > .css-s92srz-control > .css-1hwfws3').type('Nenhum{enter}')
-      cy.get('.cnepCh').click()
       cy.get('.mt-16 > .w-full > .StyledButton__Button-sc-bv92mm-0').click()
-      
-
-    
-
+     
       
   }
 }

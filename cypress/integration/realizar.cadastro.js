@@ -21,9 +21,9 @@ context('Cadastro', () => {
         //PAGEOBJETCS
         CadastroPage.cadastro(data.nome, data.sobreNome, data.email, data.senha)
 
+        cy.url().should('eq', 'http://altoqi-dev-817989462.sa-east-1.elb.amazonaws.com/perfil/')
+        cy.contains('.mt-8 > .cXvETE' , 'Resumo Profissional')
         
-    
-        cy.get('.mt-16 > .flex > .StyledTypography__Typography-sc-8kgd02-0').should('contain', 'Projeto cadastrado' )
 
     });
 });

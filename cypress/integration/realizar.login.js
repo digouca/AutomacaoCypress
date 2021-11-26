@@ -20,7 +20,7 @@ context('Login', () => {
 
         //PAGEOBJETCS
         LoginPage.login(data.email, data.senha)
-        MinhaContaPage.getUsuarioLogado().should('contain', 'Rodrigo Silva')
+        MinhaContaPage.getUsuarioLogado().should('contain', 'Teste Final109')
 
     });
 });
