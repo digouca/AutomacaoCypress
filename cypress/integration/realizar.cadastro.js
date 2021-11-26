@@ -20,7 +20,10 @@ context('Cadastro', () => {
        
         //PAGEOBJETCS
         CadastroPage.cadastro(data.nome, data.sobreNome, data.email, data.senha)
-       cy.get('.ksQlFC').should('contain', 'Olá!' )
+
+        
+    
+        cy.get('.mt-16 > .flex > .StyledTypography__Typography-sc-8kgd02-0').should('contain', 'Projeto cadastrado' )
 
     });
 });
