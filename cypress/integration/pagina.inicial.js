@@ -24,7 +24,7 @@ context('Validar paginas', () => {
     it('clicando no botão fazer login deve direcionar para a página de login do usuário', () => {
 
         cy.get('.StyledButton__Button-sc-bv92mm-0').should('be.visible')
-        cy.get('.h-full > :nth-child(2) > .StyledButton__Button-sc-bv92mm-0').click()
+        cy.contains('#__next button[type="submit"]', 'Fazer login').click()
         cy.url().should('contain', 'login')
        
     });
