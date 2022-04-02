@@ -14,9 +14,10 @@ context('Validar paginas', () => {
     it('clicando no botão Criar uma conta deve direcionar para a página de cadastro', () => {
 
          cy.get('.StyledButton__Button-sc-bv92mm-0').should('be.visible')
-         cy.get(':nth-child(1) > .StyledButton__Button-sc-bv92mm-0').click()
+         cy.contains('#__next button[type="submit"]', 'Criar uma conta').click()
+         //cy.get('#__next button[class="StyledButton__Button-sc-bv92mm-0 bmeTmh flex justify-center"]').click()
          cy.url().should('contain', 'registrar')
-         cy.get('#name').type('Lucas')
+         cy.get('input[placeholder="Nome"]').type('Lucas')
        
     });
 
