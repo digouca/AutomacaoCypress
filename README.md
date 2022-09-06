@@ -7,5 +7,5 @@ Na raiz do projeto, execute o comando npm install cypress@9.5.4 --save-dev (ou n
 
 Para rodar os testes comando npx cypress open Para rodar em segundo plano trazendo video em mp4 com o teste e screenshot do BUG
 
-Teste acessando a página inicial, fazendo cadastro de usuário e validandoa acesso de usuário cadastrado.
+Teste acessando a página inicial, fazendo cadastro de usuário e validando o acesso de usuário cadastrado.
 
