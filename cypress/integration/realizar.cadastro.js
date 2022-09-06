@@ -1,8 +1,6 @@
 /// <reference types="cypress" />
 
 import CadastroPage from '../pageObjects/criandoConta'
-import MinhaContaPage from '../pageObjects/minhaConta'
-
 
 context('Cadastro', () => {
     let data
